@@ -1,18 +1,61 @@
 <!DOCTYPE html>
-
 <html>
 <head>
+  <script async="" src="https://www.google-analytics.com/analytics.js"></script>
+  <script src="script/clipboard.min.js"></script>
+  <link rel="preload" as="font" crossorigin type="font/woff2" href="/assets/fonts/playfair-display-v20-latin-regular.woff2">
+  <link rel="preload" as="font" crossorigin type="font/woff2" href="/assets/fonts/AkkuratLightPro-Regular.woff2">
+  <link rel="preload" as="font" crossorigin type="font/woff2" href="/assets/fonts/MaisonNeue-Mono.woff2">
   <meta name="author" content="Eric Janto">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <script src="script.js"></script>
   <title>Eric Janto | Developer</title>
-  <LINK href="/css/main.css" rel="stylesheet" type="text/css"> 
+  <LINK href="css/main.css" rel="stylesheet" type="text/css"> 
 </head>
-
 <body>
-  <div class="projectWindow">
-    <video width="300" height="200" autoplay="autoplay" controls>
-      <source src="/sources/video/test.mov" type="video/mov" />
-    </video>
+  <div class="page-wrapper">
+    <div class="start-screen">
+      <nav class="follow-menu" role="navigation">
+        <p class="access-title">follow me</p>
+        <div class="left-swipe">
+          <div class="link-wrapper">
+            <a id="firstlink" class="link-left" href="https://github.com/ericjanto" target="_blank">GitHub</a>
+          </div>
+          <div class="link-wrapper">
+            <a id="secondlink" class="link-left" href="https://www.linkedin.com/in/eric-janto/" target="_blank">LinkedIn</a>
+          </div>
+          <div class="link-wrapper">
+            <a id="thirdlink" class="link-left" href="https://www.facebook.com/eric.jantoo/" target="_blank">Facebook</a>
+          </div>
+          <div class="link-wrapper">
+            <a id="fourthlink" class="link-left" href="https://www.instagram.com/ericjanto/" target="_blank">Instagram</a>
+          </div>
+        </div>
+      </nav>
+      <nav class="contact-menu" role="navigation">
+          <p id="contactinfo" class="access-title">contact me</p>
+          <div class="copy-email" style="cursor: default;">
+            <a id="copylink" class="clipboard" data-clipboard-text="e.janto@sms.ed.ac.uk" 
+               tarmget="_blank" style="cursor: pointer;" onclick="changeText()">copy email address</a>
+          </div>
+          <span class="word-inbetween">or</span>
+          <div id="copy-email-slower" class="copy-email" style="cursor: default;">
+            <a href="mailto:e.janto@sms.ed.ac.uk" target="_blank" style="text-decoration: none; color: #fff;">use this magic email link</a>
+          </div>
+      </nav>
+      <div class="title-wrapper">
+        <h1 class="main-title">Eric Janto</h1>
+        <h2 class="subtitle">Computer Science Sophomore</h2>
+      </div>
+      <div class="scroll-down">
+        <span id="icon" class="work-icon">⚒️</span>
+        <a class="scroll-text-wrapper">
+          <span class="scroll-text">Click to see my work!</span>
+          <span class="underline"></span>
+        </a>
+      </div>
+    </div>
   </div>
-</body> 
+</body>
 </html>
