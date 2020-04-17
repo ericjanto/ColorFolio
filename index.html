@@ -3,6 +3,7 @@
 <head>
   <script async="" src="https://www.google-analytics.com/analytics.js"></script>
   <script src="script/clipboard.min.js"></script>
+  <script src="script/termynal.js"></script>
   <link rel="preload" as="font" crossorigin type="font/woff2" href="/assets/fonts/playfair-display-v20-latin-regular.woff2">
   <link rel="preload" as="font" crossorigin type="font/woff2" href="/assets/fonts/AkkuratLightPro-Regular.woff2">
   <link rel="preload" as="font" crossorigin type="font/woff2" href="/assets/fonts/MaisonNeue-Mono.woff2">
@@ -11,7 +12,8 @@
   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
   <script src="script.js"></script>
   <title>Eric Janto | Developer</title>
-  <LINK href="css/main.css" rel="stylesheet" type="text/css"> 
+  <link href="css/termynal.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet" type="text/css"> 
 </head>
 <body>
   <div class="page-wrapper">
@@ -57,6 +59,19 @@
       </div>
     </div>
     <div id="terminal-link" class="terminal grid">
+      <div id="termynal" data-termynal data-ty-typeDelay="40" data-ty-lineDelay="700">
+        <span data-ty="input" data-ty-prompt="▲">npm uninstall react</span>
+        <span data-ty>Are you sure you want to uninstall 'react'?</span>
+        <span data-ty="input" data-ty-typeDelay="1000" data-ty-prompt="(y/n)">y</span>
+        <span data-ty="progress" data-ty-progressChar="·"></span>
+        <span data-ty>Uninstalled 'react'</span>
+        <span data-ty="input" data-ty-prompt="▲">node</span>
+        <span data-ty="input" data-ty-prompt=">">Array(5).fill('🦄 ')</span>
+        <span data-ty>['🦄', '🦄', '🦄', '🦄', '🦄']</span>
+        <span data-ty="input" data-ty-prompt="▲">cd ~/repos</span>
+        <span data-ty="input" data-ty-prompt="▲ ~/repos"> git checkout branch master</span>
+        <span data-ty="input" data-ty-prompt="▲ ~/repos (master)">git commit -m "Fix things"</span>
+      </div>
     </div>
   </div>
 </body>

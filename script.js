@@ -57,3 +57,5 @@ function scrollFunction() {
     document.getElementById("terminal-link").scrollIntoView(true);
 }
 
+var termynal = new Termynal('#termynal');
+
