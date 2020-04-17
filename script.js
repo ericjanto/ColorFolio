@@ -20,7 +20,6 @@ function checkScroll() {
             } else {
                 video.pause();
             }
-
     }
 
 }
@@ -30,7 +29,14 @@ window.addEventListener('resize', checkScroll, false);
 
 
 function changeText() {
-    document.getElementById("contactinfo").innerHTML = "Email address copied. Now send me pics of cute dogs! 🐶";
+    var width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+
+
+    if (width > 600) {
+        document.getElementById("contactinfo").innerHTML = "Email address copied.<br>Now send me pics of cute dogs!<br>🐶";
+    } else {
+        document.getElementById("contactinfo").innerHTML = "Email address copied, yeee! 🙌🏻";
+    }
 }
 
 var clipboardDemos = new ClipboardJS('[data-clipboard-demo]');
@@ -46,3 +52,4 @@ clipboardDemos.on('error', function(e) {
     console.error('Trigger:', e.trigger);
     showTooltip(e.trigger, fallbackMessage(e.action));
 });
+
