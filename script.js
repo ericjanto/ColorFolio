@@ -53,3 +53,7 @@ clipboardDemos.on('error', function(e) {
     showTooltip(e.trigger, fallbackMessage(e.action));
 });
 
+function scrollFunction() {
+    document.getElementById("terminal-link").scrollIntoView(true);
+}
+
