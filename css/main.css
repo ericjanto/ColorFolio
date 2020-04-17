@@ -1624,7 +1624,7 @@ body {
 }
 
 .terminal {
-  background-color: rgb(216, 215, 215);
+  background-color: #d7d7d7;
   min-height: 100vh;
   height: 100vh;
   margin-top: 100vh!important;
@@ -1774,5 +1774,6 @@ body {
 
   #termynal {
     font-size: 12px;
+    width: 95vw;
   }
 }
