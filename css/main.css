@@ -223,6 +223,7 @@ body {
 
 .access-title {
   font-family: Maison Neue Mono;
+  text-align: right;
   color: #fff;
   font-size: 12px;
   line-height: 20px;
@@ -337,6 +338,7 @@ body {
 
   -webkit-transition: transform 0.3s ease-in-out;
   -moz-transition:transform 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
   -ms-transition:transform 0.3s ease-in-out;
   transition:transform 0.3s ease-in-out;
   
@@ -355,6 +357,7 @@ body {
 
   -webkit-transition: transform 0.3s ease-in-out;
   -moz-transition:transform 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
   -ms-transition:transform 0.3s ease-in-out;
   transition:transform 0.3s ease-in-out;
 }
@@ -369,21 +372,23 @@ body {
 
   -webkit-transition: 0.3s ease-in-out;
   -moz-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
   -ms-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
 }
 
 .scroll-down:hover .underline {
-  -moz-transform: translate(100px, 0px);
-  -webkit-transform: translate(3px, 0px);
-  -o-transform: translate(3px, 0px);
-  -ms-transform: translate(3px, 0px);
-  -webkit-transform: translate(3px, 0px);
+  -moz-transform: translate(116px, 0px);
+  -webkit-transform: translate(116px, 0px);
+  -o-transform: translate(116px, 0px);
+  -ms-transform: translate(116px, 0px);
+  -webkit-transform: translate(116px, 0px);
   transform: translate(116px, 0px);
   width: 70px;
 
   -webkit-transition: 1s ease-in-out;
   -moz-transition: 1s ease-in-out;
+  -o-transition: transform 1s ease-in-out;
   -ms-transition: 1s ease-in-out;
   transition: 1s ease-in-out;
 }
@@ -400,6 +405,7 @@ body {
 
   -webkit-transition: transform 1s ease-in-out;
   -moz-transition:transform 1s ease-in-out;
+  -o-transition: transform 1s ease-in-out;
   -ms-transition:transform 1s ease-in-out;
   transition:transform 1s ease-in-out;
 }
@@ -412,9 +418,10 @@ body {
   -webkit-transform: translate(-3px, 0px);
   transform: translate(-3px, 0px);
 
-  -webkit-transition: transform 0.3s ease-in-out;
-  -moz-transition:transform 0.3s ease-in-out;
-  -ms-transition:transform 0.3s ease-in-out;
+  -webkit-transition: transform 1s ease-in-out;
+  -moz-transition:transform 1s ease-in-out;
+  -o-transition: transform 1s ease-in-out;
+  -ms-transition:transform 1s ease-in-out;
   transition:transform 1s ease-in-out;
 }
 
@@ -1613,4 +1620,59 @@ body {
   zoom:1;width: 100%;
   margin-top: auto
 }
+
+@media only screen and (max-width: 600px) {
+  .main-title {
+    font-size: 30px;
+  }
+  
+  .subtitle {
+    font-size: 15px;
+  }
+
+  .scroll-text-wrapper {
+    font-size: 10px;
+  }
+
+  .work-icon {
+    font-size: 15px;
+  }
+
+  .underline {
+    width: 32px;
+  }
+
+  .scroll-down:hover {
+    -moz-transform: translate(2px, 0px);
+    -webkit-transform: translate(2px, 0px);
+    -o-transform: translate(2px, 0px);
+    -ms-transform: translate(2px, 0px);
+    -webkit-transform: translate(2px, 0px);
+    transform: translate(2px, 0px);
+   
+  
+    -webkit-transition: 1s ease-in-out;
+    -moz-transition: 1s ease-in-out;
+    -o-transition: 1s ease-in-out;
+    -ms-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
+  }
+
+  .scroll-down:hover .underline {
+    -moz-transform: translate(116px, 0px);
+    -webkit-transform: translate(116px, 0px);
+    -o-transform: translate(116px, 0px);
+    -ms-transform: translate(116px, 0px);
+    -webkit-transform: translate(116px, 0px);
+    transform: translate(83px, 0px);
+    width: 50px;
+  
+    -webkit-transition: 1s ease-in-out;
+    -moz-transition: 1s ease-in-out;
+    -o-transition: transform 1s ease-in-out;
+    -ms-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
+  }
+}
+
 
