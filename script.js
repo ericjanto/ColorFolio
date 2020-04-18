@@ -54,8 +54,10 @@ clipboardDemos.on('error', function(e) {
 });
 
 function scrollFunction() {
-    document.getElementById("terminal-link").scrollIntoView(true);
+    document.getElementById("section-link").scrollIntoView(true);
 }
 
 var termynal = new Termynal('#termynal');
+
+
 
