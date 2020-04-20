@@ -33,7 +33,7 @@ function changeText() {
 
 
     if (width > 600) {
-        document.getElementById("contactinfo").innerHTML = "Email address copied.<br>Now send me pics of cute dogs!<br>🐶";
+        document.getElementById("contactinfo").innerHTML = "Email address copied. Now send me pics of cute dogs! 🐶";
     } else {
         document.getElementById("contactinfo").innerHTML = "Email address copied, yeee! 🙌🏻";
     }
