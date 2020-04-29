@@ -5,23 +5,22 @@
   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,300,300italic,400italic,700,700italic,800,800italic|Merriweather:400,300,300italic,400italic,700,700italic,900,900italic|Fira+Code:300,400,500,600,700">
   <link href="/css/projects-styling.css" rel="stylesheet" type="text/css"> 
-  <link href="css/main.css" rel="stylesheet" type="text/css"> 
-  <script src="script/application.js"></script>
+  <script src="/script/jquery2.2.4.min.js"></script>
+  <script src="/script/colourpicker.js"></script>
 </head>
 <body>
     <div class="subpage-wrapper">
-        <div class="project-cover">
+        <div class="project-cover" data-color="#32428b">
             <div class="cover-title">
                 <h1>some cool project</h1>
                 <p>This is a normal text I would write to describe my project. There could be long words
                     like "bipolarity" but also shorter words.<br>
                 </p>
-                <a id="moreInfo"></a><br>
-                <a href="https://github.com/ericjanto" target="_blank">see project</a>
+                <div class="cover-links"><a id="moreInfo"></a><br>
+                    <a href="https://github.com/ericjanto" target="_blank">see project</a>
+                </div>
             </div>
             <div class="cover-picture-wrapper">
-                <img class="top-corner" src="/assets/images/left_corner.svg" width="20%">
-                <img class="bottom-corner" src="/assets/images/right-corner.svg" width="20%">
                 <img class="cover-picture" src="/assets/images/waves-black-18dp.svg">
             </div>
         </div>

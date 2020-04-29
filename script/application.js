@@ -15,6 +15,10 @@ $(document).ready(function() {
       $('.popup h2').html(title);
 
       $('body').addClass('loading').addClass('noscroll');
+
+      var color = $(this).parent().css('background-color');
+      $('.popup-titlebar').css("background-color", color);
+    
   
       return false;
     });
@@ -46,5 +50,4 @@ $(document).ready(function() {
         $('.masterclose').removeClass('masterclose-visible');
       }
     });
-  
 });

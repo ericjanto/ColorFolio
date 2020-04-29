@@ -643,7 +643,7 @@ body {
   font-weight: bold;
   letter-spacing: -.5px;
 
-  background-color: #000;
+  background-color: #c54747;
   color: #fff;
   -webkit-font-smoothing: antialiased;
 }
@@ -657,6 +657,10 @@ body {
   margin: 0;
   font-size: 22px;
   font-family: Helvetica,sans-serif;
+}
+
+.popup-titlebar h2::selection {
+  color: black;
 }
 
 
@@ -707,6 +711,7 @@ iframe {
   color: #fff;
   border-radius: 0px;
   padding: 0;
+  outline: none;
 }
 
 .btn-back {
