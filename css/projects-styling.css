@@ -208,8 +208,6 @@ body {
   
 .article > pre {
     background-color: #fffafa;
-    border: 5px solid #fef8f8;
-    border-radius: 10px;
     padding: 2px 5px;
     font-family: "Fira Code", monospace;
     font-variant-ligatures: none;
@@ -240,7 +238,6 @@ body {
   
   .article > p > code, pre {
     background-color: #fffafa;
-    border-radius: 3px;
     padding: 2px 5px;
     font-family: "Fira Code", monospace;
     font-variant-ligatures: none;
@@ -289,3 +286,4 @@ body {
     color: #c54747;
   }
   
+ 

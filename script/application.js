@@ -17,9 +17,17 @@ $(document).ready(function() {
       $('body').addClass('loading').addClass('noscroll');
 
       var color = $(this).parent().css('background-color');
+
       $('.popup-titlebar').css("background-color", color);
+
+      switch(color) {
+        case "#dadfd6":
+          $('.popup h2').css("-color", "#000000");
+        break;
+        default:
+          $('.popup h2').css("color", "#ffffff");
+      }
     
-  
       return false;
     });
   
