@@ -3,14 +3,15 @@
 <head>
   <script async="" src="https://www.google-analytics.com/analytics.js"></script>
   <script src="script/clipboard.min.js"></script>
-  <link rel="preload" as="font" crossorigin type="font/woff2" href="/assets/fonts/playfair-display-v20-latin-regular.woff2">
-  <link rel="preload" as="font" crossorigin type="font/woff2" href="/assets/fonts/AkkuratLightPro-Regular.woff2">
-  <link rel="preload" as="font" crossorigin type="font/woff2" href="/assets/fonts/MaisonNeue-Mono.woff2">
+  <script>history.scrollRestoration = "manual"</script>
+  <script src="script/jquery2.2.4.min.js"></script>
+  <script src="script/application.js"></script>
   <meta name="author" content="Eric Janto">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
   <script src="script.js"></script>
   <title>Eric Janto | Developer</title>
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,300,300italic,400italic,700,700italic,800,800italic|Merriweather:400,300,300italic,400italic,700,700italic,900,900italic|Fira+Code:300,400,500,600,700">
   <link href="css/main.css" rel="stylesheet" type="text/css"> 
 </head>
 <body>
@@ -36,12 +37,12 @@
       <nav class="contact-menu" role="navigation">
           <p id="contactinfo" class="access-title">contact me</p>
           <div class="copy-email" style="cursor: default;">
-            <a id="copylink" class="btn" data-clipboard-demo data-clipboard-action="copy" data-clipboard-text="e.janto@sms.ed.ac.uk" 
+            <a id="copylink" data-clipboard-demo data-clipboard-action="copy" data-clipboard-text="e.janto@sms.ed.ac.uk" 
                target="_blank" style="cursor:pointer;" onclick="changeText()">copy email address</a>
           </div>
           <span class="word-inbetween">or</span>
           <div id="copy-email-slower" class="copy-email" style="cursor: default;">
-            <a href="mailto:e.janto@sms.ed.ac.uk" target="_blank" style="text-decoration: none; color: #fff;">use this magic email link</a>
+            <a id="slower-link" href="mailto:e.janto@sms.ed.ac.uk" target="_blank" style="color: #fff;">use this magic email link</a>
           </div>
       </nav>
       <div class="title-wrapper">
@@ -56,56 +57,49 @@
         </a>
       </div>
     </div>
-    <section id="section-link" class="works-section grid">
-      <div class="works-wrapper">
-        <div id="proj1" class="work-mask grid__col-9">
-          <h2 class="work-title">Some Project</h2>
-          <div class="work-content">
-            <div class="project-description-wrapper">
-              <div class="project-description">
-                <div id="title-proj1" class="desc-title">
-                  <h4>project</h4>
-                </div>
-                <div class="desc">
-                  <p>This is a brief description what the project was all about, at most one sentence and concise.
-                    Or maybe even a bit more than only one sentence.</p>
-                </div>
-              </div>
-              <div class="client-desc">
-                <div id="client-proj1" class="desc-title">
-                  <h4>client</h4>
-                </div>
-                <div class="desc">
-                  <p>Edinburgh University String Orchestra</p>
-                </div>
-              </div>
-              <div class="tools-description">
-                <div id="tools-proj1" class="desc-title">
-                  <h4>tools</h4>
-                </div>
-                <div class="desc">
-                  <p>HTML<br>
-                    CSS<br>
-                    JavaScript</p>
-                </div>
-              </div>
-              <div class="coworker-desc">
-                <div id="coworker-proj1" class="desc-title">
-                  <h4></h4>
-                </div>
-                <div class="desc"><p></p></div>
-              </div>
-              <div class="more-info-link"></div>
-            </div>
-            <div class="proj-thumbnail">
-              <img src="/assets/images/minimal_sketch.webp">
-            </div>
-          </div>
+    <section id="section-link" class="works-section">
+      <div id="proj1" class="project-wrapper">
+        <div class="project-title">
+          <h2>First Project</h2>
         </div>
-        <div class="work-description"></div>
       </div>
-      <div class="work-detailed-wrapper"></div>
+      <div id="proj2" class="project-wrapper">
+        <div class="project-title">
+          <h2 class="link-popup" href="/assets/projects/someproject.html" title="some project" target="_blank" data-url="https://google.com">Some Project</h2>
+        </div>
+      </div>
+      <div id="proj3" class="project-wrapper">
+        <div class="project-title">
+          <h2>Cool Project</h2>
+        </div>
+      </div>
+      <div id="proj4" class="project-wrapper">
+        <div class="project-title">
+          <h2>Something Else</h2>
+        </div>
+      </div>
+      <div id="proj5" class="project-wrapper">
+        <div class="project-title">
+          <h2>Test Text</h2>
+        </div>
+      </div>
+      <div id="proj6" class="project-wrapper">
+        <div class="project-title project-title-long">
+          <h2>Some Longer Title</h2>
+        </div>
+      </div>
     </section>
+    <div class="masterclose">
+    </div>
+    <div class="popup">
+      <div class="popup-titlebar">
+        <button class="btn btn-back">←</button>
+        <h2>_</h2>
+        <a href="" target="_blank" class="btn btn-external">↗</a>
+      </div>
+      <iframe src=""></iframe>
+      <div class="cf"></div>
+    </div>
   </div>
 </body>
 </html>
