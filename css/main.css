@@ -100,12 +100,12 @@ body {
   font-size: 13px;
   line-height: 13px;
   font-weight: 400;
-  text-decoration: none;
+  text-decoration: underline;
   text-align: center;
 }
 
 .about-me-subtitle:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .el-inline-block {
@@ -127,6 +127,35 @@ body {
       padding-left: 60px;
   }
 }
+
+@media screen and (max-width: 767px) {
+  .welcome-title-wrapper {
+      padding: 70px 35px 109px;
+      -webkit-box-align: start;
+      -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+      align-items: flex-start;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .welcome-title-wrapper {
+      overflow: auto;
+      padding-right: 0;
+      padding-bottom: 110px;
+      padding-left: 20px;
+  }
+
+  .welcome-title {
+    max-width: 100%!important;
+    padding-right: 20px!important;
+    font-size: 60px!important;
+    line-height: 60px!important;
+    letter-spacing: -1.8px!important;
+  }
+}
+
+
 
 .welcome-title { 
   overflow-wrap: break-word;
@@ -152,6 +181,38 @@ body {
   -o-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+
+
+  -webkit-animation: fadein 2s;
+  -moz-animation: fadein 2s;
+   -ms-animation: fadein 2s;
+    -o-animation: fadein 2s;
+       animation: fadein 2s;
+}
+
+@keyframes fadein {
+from { opacity: 0; }
+to   { opacity: 1; }
+}
+
+@-moz-keyframes fadein {
+from { opacity: 0; }
+to   { opacity: 1; }
+}
+
+@-webkit-keyframes fadein {
+from { opacity: 0; }
+to   { opacity: 1; }
+}
+
+@-ms-keyframes fadein {
+from { opacity: 0; }
+to   { opacity: 1; }
+}
+
+@-o-keyframes fadein {
+from { opacity: 0; }
+to   { opacity: 1; }
 }
 
 .welcome-title::selection {
@@ -210,7 +271,7 @@ body {
 }
 
 .color-button:hover .button-text {
-  color: #fff!important;
+  color: #fff;
 }
 
 @media screen and (max-width: 991px) {

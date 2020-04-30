@@ -45,6 +45,12 @@ img {
     margin: 0;
     background-color: inherit;
     text-transform: uppercase;
+
+    -webkit-animation: fadein 1s;
+    -moz-animation: fadein 1s;
+     -ms-animation: fadein 1s;
+      -o-animation: fadein 1s;
+         animation: fadein 1s;
 }
 
 .cover-title h1::selection {
@@ -55,6 +61,16 @@ img {
     color: white;
 }
 
+.separator {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 1px;
+  background-color: #00000070;
+  display: none;
+}
+
 @media only screen and (min-width: 1550px) {
     .cover-title h1 {
         font-size: 100px;
@@ -62,6 +78,10 @@ img {
 }
 
 @media only screen and (max-width: 800px) {
+  .separator {
+    display: initial;
+  }
+
   .project-cover {
     height: 200vh;
   }
@@ -75,6 +95,19 @@ img {
     max-height: 100vh;
   }
 
+  .cover-title h1 {
+    font-size: 85px!important;
+
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    -ms-word-break: break-word;
+    word-break: break-word;
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+  }
+
   .cover-picture-wrapper {
     position: absolute;
     left: 0!important;
@@ -83,10 +116,23 @@ img {
     height: 100vh!important;
     width: 100vw!important;
   }
+
+  .cover-title p {
+    font-size: 45px!important;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    -ms-word-break: break-word;
+    word-break: break-word;
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+  }
 }
 
 .cover-title p {
   position: relative;
+  top: 40px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: normal;
   padding-top: 4%;
@@ -96,11 +142,22 @@ img {
   background-color: inherit;
   text-align: justify;
   max-width: 900px;
+
+  -webkit-animation: fadein 2s;
+  -moz-animation: fadein 2s;
+   -ms-animation: fadein 2s;
+    -o-animation: fadein 2s;
+       animation: fadein 2s;
 }
 
 .cover-links {
   position: absolute;
   bottom: 4%;
+  -webkit-animation: fadein 2.5s;
+  -moz-animation: fadein 2.5s;
+   -ms-animation: fadein 2.5s;
+    -o-animation: fadein 2.5s;
+       animation: fadein 2.5s;
 }
 
 .cover-links a {
@@ -162,6 +219,12 @@ img {
     left: 0;
     right: 0;
     margin: auto;
+
+    -webkit-animation: fadein 1s;
+    -moz-animation: fadein 1s;
+     -ms-animation: fadein 1s;
+      -o-animation: fadein 1s;
+         animation: fadein 1s;
 }
 
 .information-wrapper {
@@ -173,12 +236,16 @@ img {
     position: absolute;
     top: 0px;
     left: 0px;
-    flex: 1;
-    font-size: 1.1em;
+    flex: 1.5;
+    font-size: 1.5em;
     font-weight: 300;
     line-height: 2em;
     padding: 0 30px;
     background-color: #ffffff;
+}
+
+.article {
+  padding-bottom: 50px;
 }
 
 .article > * {
@@ -239,7 +306,7 @@ img {
     font-family: "Fira Code", monospace;
     font-variant-ligatures: none;
     font-size: 0.9em;
-    line-height: 1.75em;
+    line-height: 1.55em;
     display: block;
   }
 
@@ -250,12 +317,12 @@ img {
   }
   
   .article > p > code, pre {
-    background-color: #fffafa;
+    background-color: #fff;
     padding: 2px 5px;
     font-family: "Fira Code", monospace;
     font-variant-ligatures: none;
     font-size: 0.9em;
-    line-height: 1.75em;
+    line-height: 1.55em;
   }
   
   @media only screen and (min-width: 800px) {
@@ -289,14 +356,60 @@ img {
     margin-right: auto;
     margin-bottom: 2em;
     font-family: "Merriweather", serif;
-  }
+}
   
-  .date-and-tags time {
-    font-size: 1.5em;
-  }
+.date-and-tags time {
+  font-size: 1.5em;
+}
 
-  .highlight-s {
-    color: #c54747;
-  }
+.end-bar {
+  width: 100%;
+  height: 40px;
+  background-color: #dadfd6;
+  text-align: center;
+  margin: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.end-bar h2 {
+  font-size: 22px;
+  font-family: Helvetica,sans-serif;
+  color: #fff;
+  margin: 0;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  user-select: none;
+}
+
+
+.highlight-s {
+  color: #c54747;
+}
   
- 
+  @keyframes fadein {
+    from { opacity: 0;}
+    to   { opacity: 1.5;}
+    }
+    
+    @-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1.5}
+    }
+    
+    @-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1.5}
+    }
+    
+    @-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1.5}
+    }
+    
+    @-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1.5}
+    }
