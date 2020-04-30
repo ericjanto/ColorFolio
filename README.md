@@ -1,5 +1,7 @@
 # ericjanto.github.io
 Personal Website
 
-The basic branch exists to learn all the basics of html, css and js.
-The feature branch exists to implement potential features.
+To-Do:
+1. Get some sleep
+2. Eat
+3. Finish this readme

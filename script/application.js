@@ -32,6 +32,11 @@ $(document).ready(function() {
           $('.popup h2').css("color", "#ffffff");
           $('.btn').css('color', '#ffffff');
       }
+
+      // CUSTOM CHROME TAB
+
+      var tab = $('meta[name=theme-color]');
+      tab.attr('content', color);
     
       return false;
     });
