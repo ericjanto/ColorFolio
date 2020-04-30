@@ -72,4 +72,25 @@ $(document).ready(function() {
         tab.attr('content', '#eeca00');
       }
     });
+
+    // START SCREEN
+    $('.color-button').on('click', function(event) {
+      var color = $('.start-screen').css('background-color');
+      console.log(color);
+
+      switch(color) {
+        case 'rgb(255, 255, 255)':
+          $('.start-screen').css('background-color','#eeca00');
+          color = '#eeca00';
+        break;
+        case 'rgb(238, 202, 0)':
+          $('.start-screen').css('background-color','rgb(255, 255, 255)');
+          color = 'rgb(255, 255, 255)';
+        break;
+      }
+
+      var tab = $('meta[name=theme-color]');
+      tab.attr('content', color);
+    });
+
 });

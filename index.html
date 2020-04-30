@@ -10,7 +10,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="theme-color" content="#eeca00">
+  <meta name="theme-color" content="#fff">
   <script src="script.js"></script>
   <title>Eric Janto | Developer</title>
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,300,300italic,400italic,700,700italic,800,800italic|Merriweather:400,300,300italic,400italic,700,700italic,900,900italic|Fira+Code:300,400,500,600,700">
@@ -23,45 +23,20 @@
 <body>
   <div class="page-wrapper">
     <div class="start-screen">
-      <nav class="follow-menu" role="navigation">
-        <p class="access-title">follow me</p>
-        <div class="left-swipe">
-          <div class="link-wrapper">
-            <a id="firstlink" class="link-left" href="https://github.com/ericjanto" target="_blank">GitHub</a>
-          </div>
-          <div class="link-wrapper">
-            <a id="secondlink" class="link-left" href="https://www.linkedin.com/in/eric-janto/" target="_blank">LinkedIn</a>
-          </div>
-          <div class="link-wrapper">
-            <a id="thirdlink" class="link-left" href="https://www.facebook.com/eric.jantoo/" target="_blank">Facebook</a>
-          </div>
-          <div class="link-wrapper">
-            <a id="fourthlink" class="link-left" href="https://www.instagram.com/ericjanto/" target="_blank">Instagram</a>
-          </div>
+      <div class="nav">
+        <div class="about-me">
+          <a href="/index.html" class="el-inline-block">
+          <h2 class="about-me-heading">Eric Janto</h2></a>
+          <a href="/assets/projects/firstproject.html" title="about me" target="_blank" data-url="https://google.com" class="link-popup el-inline-block">
+          <h4 class="about-me-subtitle">about me</h4></a>
         </div>
-      </nav>
-      <nav class="contact-menu" role="navigation">
-          <p id="contactinfo" class="access-title">contact me</p>
-          <div class="copy-email" style="cursor: default;">
-            <a id="copylink" data-clipboard-demo data-clipboard-action="copy" data-clipboard-text="e.janto@sms.ed.ac.uk" 
-               target="_blank" style="cursor:pointer;" onclick="changeText()">copy email address</a>
-          </div>
-          <span class="word-inbetween">or</span>
-          <div id="copy-email-slower" class="copy-email" style="cursor: default;">
-            <a id="slower-link" href="mailto:e.janto@sms.ed.ac.uk" target="_blank" style="color: #fff;">use this magic email link</a>
-          </div>
-      </nav>
-      <div class="title-wrapper">
-        <h1 class="main-title">Eric Janto</h1>
-        <h2 class="subtitle">Computer Science Sophomore</h2>
       </div>
-      <div class="scroll-down">
-        <span id="icon" class="work-icon">⚒️</span>
-        <a class="scroll-text-wrapper" style="text-decoration: none;" onclick="scrollFunction()">
-          <span class="scroll-text">Click to see my work!</span>
-          <span class="underline"></span>
-        </a>
+      <div class="welcome-title-wrapper">
+        <h1 class="welcome-title">I'm a developer and pizza enthusiast based in Edinburgh</h1>
       </div>
+    </div>
+    <div class="bottom">
+      <a target="_blank" class="color-button"><div class="button-text">Do you like colours? Click me!</div></a>
     </div>
     <section id="section-link" class="works-section">
       <div id="proj1" class="project-wrapper">
