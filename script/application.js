@@ -19,13 +19,18 @@ $(document).ready(function() {
       var color = $(this).parent().css('background-color');
 
       $('.popup-titlebar').css("background-color", color);
+      $('iframe').css('background-color', color);
+
+      // CUSTOM POPUP BAR
 
       switch(color) {
-        case "#dadfd6":
-          $('.popup h2').css("-color", "#000000");
+        case "rgb(218, 223, 214)":
+          $('.popup h2').css("color", "#000000");
+          $('.btn').css("color", "#000000");
         break;
         default:
           $('.popup h2').css("color", "#ffffff");
+          $('.btn').css('color', '#ffffff');
       }
     
       return false;
