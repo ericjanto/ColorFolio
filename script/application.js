@@ -14,7 +14,7 @@ $(document).ready(function() {
       $('.popup .btn-external').attr('href', extUrl);
       $('.popup h2').html(title);
 
-      $('body').addClass('loading').addClass('noscroll');
+      $('body').addClass('noscroll');
 
       var color = $(this).parent().css('background-color');
 
@@ -46,6 +46,9 @@ $(document).ready(function() {
       $('.popup').removeClass('popup-visible');
       $('body').removeClass('noscroll loading');
       $('.masterclose').removeClass('masterclose-visible');
+
+      var tab = $('meta[name=theme-color]');
+      tab.attr('content', '#eeca00');
     });
   
     // MASTERCLOSE
@@ -53,11 +56,9 @@ $(document).ready(function() {
       $('body').removeClass('noscroll loading');
       $(this).removeClass('masterclose-visible');
       $('.popup').removeClass('popup-visible');
-    });
-  
-    // LOADING INDICATOR
-    $('iframe').on('load', function() {
-      $('body').removeClass('loading');
+
+      var tab = $('meta[name=theme-color]');
+      tab.attr('content', '#eeca00');
     });
   
     // ESCAPE KEY
@@ -66,6 +67,9 @@ $(document).ready(function() {
         $('.popup').removeClass('popup-visible');
         $('body').removeClass('noscroll loading');
         $('.masterclose').removeClass('masterclose-visible');
+
+        var tab = $('meta[name=theme-color]');
+        tab.attr('content', '#eeca00');
       }
     });
 });
