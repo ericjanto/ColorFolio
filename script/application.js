@@ -71,7 +71,7 @@ $(document).ready(function() {
       $('.popup').removeClass('popup-visible');
 
       var tab = $('meta[name=theme-color]');
-      tab.attr('content', newColor);
+      tab.attr('content', btnColor);
     });
   
     // ESCAPE KEY
@@ -82,7 +82,7 @@ $(document).ready(function() {
         $('.masterclose').removeClass('masterclose-visible');
 
         var tab = $('meta[name=theme-color]');
-        tab.attr('content', newColor);
+        tab.attr('content', btnColor);
       }
     });
 
