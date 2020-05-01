@@ -46,19 +46,22 @@ $(document).ready(function() {
       // CUSTOM CHROME TAB
 
       var tab = $('meta[name=theme-color]');
-      tab.attr('content', newColor);
+      tab.attr('content', color);
     
       return false;
     });
   
     // BACK BUTTON
+
+    var btnColor;
+
     $('.btn-back').on('click', function() {
       $('.popup').removeClass('popup-visible');
       $('body').removeClass('noscroll loading');
       $('.masterclose').removeClass('masterclose-visible');
 
       var tab = $('meta[name=theme-color]');
-      tab.attr('content', newColor);
+      tab.attr('content', btnColor);
     });
   
     // MASTERCLOSE
@@ -112,6 +115,8 @@ $(document).ready(function() {
           newColor = 'rgb(228, 140, 58)';
         break;
       }
+
+      btnColor = newColor;
 
       if (color == newColor) {
           newColor = 'rgb(131, 231, 240)';
