@@ -14,6 +14,8 @@ $(document).ready(function() {
       $('.popup .btn-external').attr('href', extUrl);
       $('.popup h2').html(title);
 
+
+
       $('body').addClass('noscroll');
 
       var color = $(this).parent().css('background-color');
@@ -23,15 +25,23 @@ $(document).ready(function() {
 
       // CUSTOM POPUP BAR
 
-      switch(color) {
-        case "rgb(218, 223, 214)":
+      var brightness = lightOrDark(color);
+
+      switch(brightness) {
+        case 'light':
           $('.popup h2').css("color", "#000000");
           $('.btn').css("color", "#000000");
+        break;
+        case 'dark':
+          $('.popup h2').css("color", "#ffffff");
+          $('.btn').css('color', '#ffffff');
         break;
         default:
           $('.popup h2').css("color", "#ffffff");
           $('.btn').css('color', '#ffffff');
       }
+
+
 
       // CUSTOM CHROME TAB
 
@@ -48,7 +58,7 @@ $(document).ready(function() {
       $('.masterclose').removeClass('masterclose-visible');
 
       var tab = $('meta[name=theme-color]');
-      tab.attr('content', '#eeca00');
+      tab.attr('content', newColor);
     });
   
     // MASTERCLOSE
@@ -58,7 +68,7 @@ $(document).ready(function() {
       $('.popup').removeClass('popup-visible');
 
       var tab = $('meta[name=theme-color]');
-      tab.attr('content', '#eeca00');
+      tab.attr('content', newColor);
     });
   
     // ESCAPE KEY
@@ -69,7 +79,7 @@ $(document).ready(function() {
         $('.masterclose').removeClass('masterclose-visible');
 
         var tab = $('meta[name=theme-color]');
-        tab.attr('content', '#eeca00');
+        tab.attr('content', newColor);
       }
     });
 
@@ -125,5 +135,44 @@ $(document).ready(function() {
 
       $('.button-text').text('Yeee! Now scroll down to see my work!');
     });
-
 });
+
+
+
+
+function lightOrDark(color) { // src: https://awik.io/determine-color-bright-dark-using-javascript/
+  var r, g, b, hsp;
+
+  if (color.match(/^rgb/)) {
+
+      color = color.match(/^rgba?\((\d+),\s*(\d+),\s*(\d+)(?:,\s*(\d+(?:\.\d+)?))?\)$/);
+      
+      r = color[1];
+      g = color[2];
+      b = color[3];
+  } 
+  else {
+      
+      color = +("0x" + color.slice(1).replace( 
+      color.length < 5 && /./g, '$&$&'));
+
+      r = color >> 16;
+      g = color >> 8 & 255;
+      b = color & 255;
+  }
+  
+  hsp = Math.sqrt(
+  0.299 * (r * r) +
+  0.587 * (g * g) +
+  0.114 * (b * b)
+  );
+
+  if (hsp>150) {
+
+      return 'light';
+  } 
+  else {
+
+      return 'dark';
+  }
+}

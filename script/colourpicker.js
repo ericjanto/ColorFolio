@@ -24,3 +24,7 @@ function opacityChanger(extColor) {
 
     return rgbaCol;
 };
+
+function changeText() {
+    document.getElementById('moreInfo').innerHTML = 'just scroll down!';
+}
