@@ -46,7 +46,7 @@ $(document).ready(function() {
       // CUSTOM CHROME TAB
 
       var tab = $('meta[name=theme-color]');
-      tab.attr('content', color);
+      tab.attr('content', newColor);
     
       return false;
     });
