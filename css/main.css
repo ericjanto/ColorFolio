@@ -219,6 +219,7 @@ to   { opacity: 1; }
 
 .welcome-title::selection {
   color: #fff;
+  color: rgb(197, 71, 71)
 }
 
 .bottom {
