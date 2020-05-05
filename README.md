@@ -1,4 +1,4 @@
-# ericjanto.github.io
+# ColorFolio
 Personal Website
 
 To-Do:
