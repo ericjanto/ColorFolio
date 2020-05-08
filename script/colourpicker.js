@@ -10,6 +10,10 @@ $(document).ready(function() {
             $('.article a').css('color', '#72756f');
             $('.end-bar h2').css('color', '#000000')
         break;
+        case '#c9b5ff':
+            $('.article a').css('color', '#b296ff');
+            $('.end-bar h2').css('color', '#000000');
+        break;
         default:
             $('.article a').css('color', color);
     }
