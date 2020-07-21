@@ -1,4 +1,4 @@
-# ColorFolio
+# Farbenspiel
 Customisable Website for Portfolios.
 
 To-Do:
